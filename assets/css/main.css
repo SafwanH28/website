@@ -2803,8 +2803,8 @@ input, select, textarea {
 		
 		.spotlight2 .image img {
 			border-radius: 50%; /* Makes the image circular */
-			width: 540px; /* Adjust size as needed */
-			height: 460px; /* Adjust size as needed */
+			width: 100%; /* Adjust size as needed */
+			height: 100%; /* Adjust size as needed */
 			object-fit: cover;
 			padding: 2em 4em;
 			
@@ -2850,6 +2850,50 @@ input, select, textarea {
 				padding: 1.5em 1em;
 			}
 		}
+
+		@media screen and (max-width: 1280px) {
+
+			.spotlight2 .image {
+				width: 45%;
+			}
+
+			.spotlight .content {
+				width: 55%;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.spotlight2 {
+				display: block;
+			}
+
+				.spotlight2 br {
+					display: none;
+				}
+
+				.spotlight2 .image {
+					width: 100%;
+				}
+
+				.spotlight2 .content {
+					padding: 4em 3em 2em 3em ;
+					max-width: none;
+					text-align: center;
+					width: 100%;
+				}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.spotlight2 .content {
+				padding: 3em 2em 1em 2em ;
+			}
+
+		}
+
 /* Wrapper */
 
 	.wrapper {
